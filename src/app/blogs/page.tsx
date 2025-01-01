@@ -12,7 +12,7 @@ export default function BlogsPage() {
 
         <p className="text-xl text-gray-300 max-w-3xl mx-auto">
           Dive into our comprehensive collection of articles covering the latest in technology and football. 
-          From in-depth analyses to breaking news, we've got you covered.
+          From in-depth analyses to breaking news, we&apos;ve got you covered.
         </p>
 
       </div>

@@ -10,7 +10,7 @@ export default function Hero() {
 
             <p className="text-xl text-gray-300 max-w-2xl mx-auto">
                 Explore the intersection of cutting-edge technology and the beautiful game.
-                Stay ahead with our expert insights on tech innovations and football's top teams.
+                Stay ahead with our expert insights on tech innovations and football&apos;s top teams.
             </p>
 
             <Link
