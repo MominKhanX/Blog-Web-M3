@@ -4,8 +4,7 @@ import Image from 'next/image'
 import Comments from './comments'
 
 
-/* eslint-disable-next-line @typescript-eslint/ban-ts-comment */
-// @ts-ignore
+
 export default function PostPage({ params }: { params: { id: string } }) {
     const post = getPostById(params.id)
 
