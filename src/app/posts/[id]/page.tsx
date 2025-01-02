@@ -3,6 +3,8 @@ import { notFound } from 'next/navigation'
 import Image from 'next/image'
 import Comments from './comments'
 
+
+// @ts-ignore
 export default function PostPage({ params }: { params: { id: string } }) {
     const post = getPostById(params.id)
 
