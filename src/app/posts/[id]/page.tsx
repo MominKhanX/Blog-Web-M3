@@ -5,11 +5,15 @@ import Comments from './comments'
 
 
 
-export default function PostPage({ params }: { params: { id: string } }) {
-    const post = getPostById(params.id)
+export default function PostPage({
+    params,
+}: {
+    params: { id: string };
+}) {
+    const post = getPostById(params.id);
 
     if (!post) {
-        notFound()
+        notFound();
     }
 
     return (
@@ -33,7 +37,7 @@ export default function PostPage({ params }: { params: { id: string } }) {
             </div>
 
             <Comments />
-            
+
         </article>
     )
 }
