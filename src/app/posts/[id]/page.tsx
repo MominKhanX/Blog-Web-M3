@@ -5,15 +5,18 @@ import Comments from './comments'
 
 
 
-export default function PostPage({
+export default async function PostPage({
     params,
-}: {
-    params: { id: string };
-}) {
-    const post = getPostById(params.id);
-
+  }: {
+    params: Promise<{ id: string }>;
+  }) {
+    // Resolve the promise
+    const resolvedParams = await params;
+  
+    const post = getPostById(resolvedParams.id);
+  
     if (!post) {
-        notFound();
+      notFound();
     }
 
     return (
@@ -37,7 +40,7 @@ export default function PostPage({
             </div>
 
             <Comments />
-
+            
         </article>
     )
 }
